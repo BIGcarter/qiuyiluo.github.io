@@ -33,3 +33,5 @@ RUN bundle install
 
 # Command to serve the Jekyll site
 CMD ["jekyll", "serve", "-H", "0.0.0.0", "-w", "--config", "_config.yml,_config_docker.yml"]
+
+RUN gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
